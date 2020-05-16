@@ -39,15 +39,15 @@
             this.labelPhone = new System.Windows.Forms.Label();
             this.labelEmail = new System.Windows.Forms.Label();
             this.listViewClient = new System.Windows.Forms.ListView();
-            this.buttonAdd = new System.Windows.Forms.Button();
-            this.buttonEdit = new System.Windows.Forms.Button();
-            this.buttonDel = new System.Windows.Forms.Button();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.buttonAdd = new System.Windows.Forms.Button();
+            this.buttonEdit = new System.Windows.Forms.Button();
+            this.buttonDel = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -156,36 +156,6 @@
             this.listViewClient.View = System.Windows.Forms.View.Details;
             this.listViewClient.SelectedIndexChanged += new System.EventHandler(this.listViewClient_SelectedIndexChanged);
             // 
-            // buttonAdd
-            // 
-            this.buttonAdd.Location = new System.Drawing.Point(191, 349);
-            this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(75, 36);
-            this.buttonAdd.TabIndex = 11;
-            this.buttonAdd.Text = "Создать";
-            this.buttonAdd.UseVisualStyleBackColor = true;
-            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click_1);
-            // 
-            // buttonEdit
-            // 
-            this.buttonEdit.Location = new System.Drawing.Point(288, 349);
-            this.buttonEdit.Name = "buttonEdit";
-            this.buttonEdit.Size = new System.Drawing.Size(75, 36);
-            this.buttonEdit.TabIndex = 12;
-            this.buttonEdit.Text = "Изменить";
-            this.buttonEdit.UseVisualStyleBackColor = true;
-            this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
-            // 
-            // buttonDel
-            // 
-            this.buttonDel.Location = new System.Drawing.Point(386, 349);
-            this.buttonDel.Name = "buttonDel";
-            this.buttonDel.Size = new System.Drawing.Size(75, 36);
-            this.buttonDel.TabIndex = 13;
-            this.buttonDel.Text = "Удалить";
-            this.buttonDel.UseVisualStyleBackColor = true;
-            this.buttonDel.Click += new System.EventHandler(this.buttonDel_Click);
-            // 
             // columnHeader1
             // 
             this.columnHeader1.Text = "id";
@@ -209,6 +179,39 @@
             // columnHeader6
             // 
             this.columnHeader6.Text = "Почта";
+            // 
+            // buttonAdd
+            // 
+            this.buttonAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
+            this.buttonAdd.Location = new System.Drawing.Point(191, 349);
+            this.buttonAdd.Name = "buttonAdd";
+            this.buttonAdd.Size = new System.Drawing.Size(75, 36);
+            this.buttonAdd.TabIndex = 11;
+            this.buttonAdd.Text = "Создать";
+            this.buttonAdd.UseVisualStyleBackColor = false;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click_1);
+            // 
+            // buttonEdit
+            // 
+            this.buttonEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
+            this.buttonEdit.Location = new System.Drawing.Point(288, 349);
+            this.buttonEdit.Name = "buttonEdit";
+            this.buttonEdit.Size = new System.Drawing.Size(75, 36);
+            this.buttonEdit.TabIndex = 12;
+            this.buttonEdit.Text = "Изменить";
+            this.buttonEdit.UseVisualStyleBackColor = false;
+            this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
+            // 
+            // buttonDel
+            // 
+            this.buttonDel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
+            this.buttonDel.Location = new System.Drawing.Point(386, 349);
+            this.buttonDel.Name = "buttonDel";
+            this.buttonDel.Size = new System.Drawing.Size(75, 36);
+            this.buttonDel.TabIndex = 13;
+            this.buttonDel.Text = "Удалить";
+            this.buttonDel.UseVisualStyleBackColor = false;
+            this.buttonDel.Click += new System.EventHandler(this.buttonDel_Click);
             // 
             // pictureBox1
             // 

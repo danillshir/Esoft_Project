@@ -30,29 +30,40 @@ namespace Esoft_Project
 
         private void buttonAdd_Click(object sender, EventArgs e)
         {
+            //создаем новый экземпляр класса Клиент
             ClientsSet clientsSet = new ClientsSet();
+            //делаем ссылку на объект, который хранится в textBox-ах
             clientsSet.FirstName = textBoxFirstName.Text;
             clientsSet.MiddleName = textBoxMiddleName.Text;
             clientsSet.LastName = textBoxLastName.Text;
             clientsSet.Phone = textBoxPhone.Text;
             clientsSet.Email = textBoxEmail.Text;
+            //добавляем в таблицу ClientsSet нового клиента ClientSet
             Program.wftDb.ClientsSet.Add(clientsSet);
+            //Сохраняем изменения в модели wftDb(экземпляр который был создан ранее)
             Program.wftDb.SaveChanges();
             ShowClient();
 
         }
         void ShowClient()
         {
+            //Очищаем listView
             listViewClient.Items.Clear();
+            //проходимся по коллекции клиентов, которые находятся в базе с помощью foreach
             foreach (ClientsSet clientsSet in Program.wftDb.ClientsSet)
             {
+                //создаем новый элемент в listView
+                //создаем новый массив строк
                 ListViewItem item = new ListViewItem(new string[]
                 {
                     clientsSet.id.ToString(), clientsSet.FirstName, clientsSet.MiddleName, clientsSet.LastName, clientsSet.Phone, clientsSet.Email
                 });
+                //указываем по какому тегу будем брать элементы
                 item.Tag = clientsSet;
+                //добавляем элементы в listView Для отображения
                 listViewClient.Items.Add(item);
             }
+            //выравниваем колонки в listView
             listViewClient.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
         }
 
@@ -84,7 +95,19 @@ namespace Esoft_Project
 
         private void buttonAdd_Click_1(object sender, EventArgs e)
         {
-
+            //создаем новый экземпляр класса Клиент
+            ClientsSet clientsSet = new ClientsSet();
+            //добавляем ссылку на объект, который находится в textBox-ах
+            clientsSet.FirstName = textBoxFirstName.Text;
+            clientsSet.MiddleName = textBoxMiddleName.Text;
+            clientsSet.LastName = textBoxLastName.Text;
+            clientsSet.Phone = textBoxPhone.Text;
+            clientsSet.Email = textBoxEmail.Text;
+            //добавляем в таблицу нового клиента
+            Program.wftDb.ClientsSet.Add(clientsSet);
+            //сохраняем изменения в модели wftDb(экземпляр который был создан ранее)
+            Program.wftDb.SaveChanges();
+            ShowClient();
         }
 
         private void buttonEdit_Click(object sender, EventArgs e)
