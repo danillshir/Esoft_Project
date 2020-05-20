@@ -61,11 +61,23 @@
     <Compile Include="ClientsSet.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="DealSet.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DemandSet.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="FormAgent.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormAgent.Designer.cs">
       <DependentUpon>FormAgent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAuthrorization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAuthrorization.Designer.cs">
+      <DependentUpon>FormAuthrorization.cs</DependentUpon>
     </Compile>
     <Compile Include="FormClient.cs">
       <SubType>Form</SubType>
@@ -73,11 +85,29 @@
     <Compile Include="FormClient.Designer.cs">
       <DependentUpon>FormClient.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormDeal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDeal.Designer.cs">
+      <DependentUpon>FormDeal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDemand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDemand.Designer.cs">
+      <DependentUpon>FormDemand.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormRealEstate.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormRealEstate.Designer.cs">
       <DependentUpon>FormRealEstate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSupply.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSupply.Designer.cs">
+      <DependentUpon>FormSupply.cs</DependentUpon>
     </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
@@ -105,14 +135,32 @@
     <Compile Include="RealEstateSet.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="SupplySet.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Users.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FormAgent.resx">
       <DependentUpon>FormAgent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAuthrorization.resx">
+      <DependentUpon>FormAuthrorization.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormClient.resx">
       <DependentUpon>FormClient.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormDeal.resx">
+      <DependentUpon>FormDeal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDemand.resx">
+      <DependentUpon>FormDemand.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormRealEstate.resx">
       <DependentUpon>FormRealEstate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSupply.resx">
+      <DependentUpon>FormSupply.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>

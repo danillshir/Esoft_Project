@@ -9,7 +9,7 @@ namespace Esoft_Project
     static class Program
     {
         //создание статического экземпляра класса модели ADD.EDM
-        public static Esoft_ProjectEntities6 wftDb = new Esoft_ProjectEntities6();
+        public static Esoft_ProjectEntities12 wftDb = new Esoft_ProjectEntities12();
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>
@@ -18,7 +18,7 @@ namespace Esoft_Project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Menu());
+            Application.Run(new FormAuthrorization());
         }
     }
 }
